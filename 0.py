@@ -28,6 +28,10 @@ try:
 except ImportError:
     install("requests")
 try:
+    import Pillow
+except ImportError:
+    install("Pillow")
+try:
     import colorama
 except ImportError:
     install("colorama")
