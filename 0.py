@@ -100,7 +100,7 @@ def load_key_from_file(filename='LKZTOOL-key.txt'):
             return file.read().strip()
     return None
 def main():
-    clear_screen()
+    os.system('cls' if os.name == 'nt' else 'clear')
 if __name__ == "__main__":
     main()
 # Mã màu ANSI cho 7 sắc cầu vồng
