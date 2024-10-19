@@ -63,9 +63,6 @@ xanhnhat = "\033[1;36m"
 HĐ_tool = trang + " " + trang + "[" + do + "+_+" + trang + "] " + trang + "=> "
 mquang = trang + " " + trang + "[" + do + "÷_+" + trang + "] " + trang + "=> "
 thanh = trang + "-------------------------------------------------------------------------"
-
-import os
-
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
 
@@ -75,10 +72,6 @@ clear_screen()
 # Lmao
 thanh_xau=trang+'~'+do+'['+vang+'𝓛𝓚𝓩'+do+'] '+trang+'➩  '+xanhnhat
 thanh_dep=trang+'~'+do+'['+xanh_la+'✓'+do+'] '+trang+'➩  '+xanhnhat
-
-import os
-import requests
-from time import strftime
 now = datetime.datetime.now()
 thu = now.strftime('%A')
 ngay_hom_nay = now.strftime('%d')
