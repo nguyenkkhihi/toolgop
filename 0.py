@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 import json
 import time
 import subprocess
-    import pystyle
+import pystyle
 from time import strftime
 import os
 import requests
