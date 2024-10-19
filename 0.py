@@ -5,6 +5,7 @@ from os.path import isfile
 from bs4 import BeautifulSoup
 import json
 import time
+import subprocess
 from time import strftime
 import os
 import requests
