@@ -2,6 +2,7 @@
 try :
     import requests
     import time
+    import sys
     import os 
     from art import *
     from colorama import Fore
