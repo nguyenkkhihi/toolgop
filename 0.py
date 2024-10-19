@@ -92,15 +92,6 @@ from pystyle import Add, Center, Anime, Colors, Colorate, Write, System
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
 def save_key_to_file(key, filename='LKZTOOL-key.txt'):
-    with open(filename, 'w') as file:
-        file.write(str(key))
-def load_key_from_file(filename='LKZTOOL-key.txt'):
-    if os.path.exists(filename):
-        with open(filename, 'r') as file:
-            return file.read().strip()
-    return None
-def main():
-    clear_screen()
 if __name__ == "__main__":
     main()
 # Mã màu ANSI cho 7 sắc cầu vồng
