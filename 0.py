@@ -60,10 +60,7 @@ xanhnhat = "\033[1;36m"
 HĐ_tool = trang + " " + trang + "[" + do + "+_+" + trang + "] " + trang + "=> "
 mquang = trang + " " + trang + "[" + do + "÷_+" + trang + "] " + trang + "=> "
 thanh = trang + "-------------------------------------------------------------------------"
-def clear_screen():
-    os.system('cls' if os.name == 'nt' else 'clear')
-# Gọi hàm để xóa màn hình
-clear_screen()
+os.system('cls' if os.name == 'nt' else 'clear')
 # Lmao
 thanh_xau=trang+'~'+do+'['+vang+'𝓛𝓚𝓩'+do+'] '+trang+'➩  '+xanhnhat
 thanh_dep=trang+'~'+do+'['+xanh_la+'✓'+do+'] '+trang+'➩  '+xanhnhat
@@ -93,8 +90,7 @@ banner = r"""
 """
 Anime.Fade(Center.Center(banner), Colors.blue_to_green, Colorate.Vertical, enter=True)
 from pystyle import Add, Center, Anime, Colors, Colorate, Write, System
-def clear_screen():
-    os.system('cls' if os.name == 'nt' else 'clear')
+os.system('cls' if os.name == 'nt' else 'clear')
 def save_key_to_file(key, filename='LKZTOOL-key.txt'):
     with open(filename, 'w') as file:
         file.write(str(key))
