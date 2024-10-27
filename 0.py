@@ -135,7 +135,7 @@ def banner():
 \033[1;97m[\033[1;91m->\033[1;97m]\033[1;97m nhóm telegram\033[1;31m  : \033[1;36mhttps://t.me/lkztool
 \033[1;97m[\033[1;91m->\033[1;97m]\033[1;97m Youtube\033[1;31m  : \033[1;36mhttps://youtube.com/@lkztool?si=7aPtPEHjDvOAIVgl
 \033[1;97m[\033[1;91m->\033[1;97m]\033[1;97m Zalo\033[1;31m     : \033[1;36mhttp://zaloapp.com/qr/p/289m9jxm6gpn
-\033[1;97m[\033[1;91m->\033[1;97m]\033[1;97m Telegram\033[1;31m : \033[1;36mhttps://t.me/van_anh2004
+\033[1;97m[\033[1;91m->\033[1;97m]\033[1;97m Telegram\033[1;31m : \033[1;36mhttps://t.me/xuannguyen2007
 \033[97m════════════════════════════════════════════════
 """
     for X in banner:
@@ -144,6 +144,10 @@ def banner():
         sleep(0.00125)
 os.system('cls' if os.name == 'nt' else 'clear')
 banner()
+print("\033[1;32mmua key liên hệ 👇👇👇👇")
+print("\033[1;36mzalo: \033[1;33mhttp://zaloapp.com/qr/p/289m9jxm6gpn")
+print("\033[1;31mhoặc")
+print("\033[1;36mtelegram: \033[1;33mhttps://t.me/xuannguyen2007")
 from datetime import datetime
 # URL chứa dữ liệu key VIP
 url_vip = "https://raw.githubusercontent.com/nguyenkkhihi/toolgop/refs/heads/main/T%E1%BA%A1o%20key"
