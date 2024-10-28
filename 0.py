@@ -184,7 +184,7 @@ def generate_free_key():
 
 # Tạo liên kết lấy key free
 def generate_key_link(key_free):
-    url = f"https://lkztool.linkpc.net/key.html?key={key_free}"
+    url = f"https://lkztool.linkpc.net/Webkey/key.html?key={key_free}"
     # URL yêu cầu người dùng vượt qua link để lấy key
     rq = requests.get(f"https://yeumoney.com/QL_api.php?token=2c5aea9e4392b49789a90c8cee8a2f192986dd825912b92a12bdc221616963ba&url={url}").text
     ma = rq.split('var code_link = "')[1].split('";')[0]
