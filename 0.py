@@ -183,14 +183,20 @@ def generate_free_key():
         exit()
 
 # Tạo liên kết lấy key free
+# Tạo liên kết lấy key free qua 2 lần vượt link
 def generate_key_link(key_free):
-    url = f"https://lkztool.linkpc.net/Webkey/key.html?key={key_free}"
-    # URL yêu cầu người dùng vượt qua link để lấy key
-    rq = requests.get(f"https://yeumoney.com/QL_api.php?token=2c5aea9e4392b49789a90c8cee8a2f192986dd825912b92a12bdc221616963ba&url={url}").text
-    ma = rq.split('var code_link = "')[1].split('";')[0]
-    link = f"https://yeumoney.com/{ma}"
-    return link
+    # Bước 1: Tạo liên kết đầu tiên
+    url_step1 = f"https://lkztool.linkpc.net/Webkey/key.html?key={key_free}"
+    rq_step1 = requests.get(f"https://yeumoney.com/QL_api.php?token=2c5aea9e4392b49789a90c8cee8a2f192986dd825912b92a12bdc221616963ba&url={url_step1}").text
+    ma_step1 = rq_step1.split('var code_link = "')[1].split('";')[0]
+    link_step1 = f"https://yeumoney.com/{ma_step1}"
 
+    # Bước 2: Tạo liên kết thứ hai dựa trên liên kết đầu tiên
+    rq_step2 = requests.get(f"https://yeumoney.com/QL_api.php?token=2c5aea9e4392b49789a90c8cee8a2f192986dd825912b92a12bdc221616963ba&url={link_step1}").text
+    ma_step2 = rq_step2.split('var code_link = "')[1].split('";')[0]
+    final_link = f"https://yeumoney.com/{ma_step2}"
+    
+    return final_link
 # Key VIP
 def check_vip_key(user_key):
     response = requests.get(url_vip)
